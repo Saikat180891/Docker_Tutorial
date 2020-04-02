@@ -1,0 +1,28 @@
+docker version // to check the version
+
+docker run <image_name> // to run image
+
+//override default command
+docker run <image_name> command
+ex: docker run busybox echo hi there
+ex: docker run busybox ls
+
+docker ps // check all running containers
+
+docker ps --all // shows all containers that are ever created
+
+docker run = docker create + docker start
+
+docker create <image>
+docker start -a <container_id>
+-a will print in the  terminal
+
+// delete all containers
+docker system prune
+
+// get logs
+docker logs <container_id>
+
+//stopping a container
+docker stop <container_id> 		// issues SIGTERM
+docker kill <container_id>		// issues SIGKILL
