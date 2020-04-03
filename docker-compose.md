@@ -22,3 +22,7 @@ unless-stopped
 ```
 
 for no type "no"
+
+### Check status
+
+docker-compose ps
